@@ -1,0 +1,21 @@
+/* Global base */
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  background: #f6f6f6;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* make anchor links inherit color */
+a { color: inherit; }
+
+/* post-card background on dark or light could be handled here */
+main { min-height: 100vh; }
+
+/* small responsive tweaks */
+@media (max-width: 900px) {
+  .fixed-logo { left: 16px; top: 16px; }
+  main { padding: 0 12px; }
+}

@@ -1,0 +1,73 @@
+/* Header Layout */
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Bar (Logo + Social) */
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px; /* adjust spacing from edges */
+  position: fixed; /* fixed at top */
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+/* Scroll shadow effect for top bar */
+.top-bar.scrolled {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: #ffffffcc;
+  backdrop-filter: blur(6px);
+}
+
+/* Logo */
+.logo-container img {
+  display: block;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 18px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ff4d4f;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 80px; /* leave space below top-bar */
+  padding: 15px 0;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+/* Nav Item */
+.nav-item {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #ff4d4f;
+}
